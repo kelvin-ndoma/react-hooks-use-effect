@@ -11,9 +11,9 @@ function DogPics() {
       .then((r) => r.json())
       .then((data) => {
         console.log("setState");
-        setImages(data.message);
+        setImages(data.messages);
       });
-  });
+  }, []);
 
   console.log("render");
 
